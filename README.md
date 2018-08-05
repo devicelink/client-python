@@ -24,7 +24,7 @@ pip install git+https://github.com/devicelink/client-python.git
 
 Then import the package:
 ```python
-import openapi_client 
+import devicelink.client 
 ```
 
 ### Setuptools
@@ -38,7 +38,7 @@ python setup.py install --user
 
 Then import the package:
 ```python
-import openapi_client
+import devicelink.client
 ```
 
 ## Getting Started
@@ -48,12 +48,12 @@ Please follow the [installation procedure](#installation--usage) and then run th
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import devicelink.client
+from devicelink.client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = openapi_client.DefaultApi(openapi_client.ApiClient(configuration))
+api_instance = devicelink.client.DefaultApi(devicelink.client.ApiClient(configuration))
 group_id = 'group_id_example' # str | uuid of group
 id = 'id_example' # str | uuid of device
 
